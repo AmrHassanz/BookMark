@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bookmark</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css"> <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/style.css"> <!-- My CSS -->
+  <link href="css/all.min.css" rel="stylesheet"> <!-- font awesome -->
+
+
+</head>
+
+<body>
+
+  <div class="container my-5">
+    <h3 class="text-muted fw-bold">Bookmarker</h3>
+    <hr>
+    <div class="my-5 p-4 bg-light text-center">
+      <h2 class="my-4">Bookmark your favorite sites</h2>
+
+      <label class="fw-bolder" for="siteName">Site Name</label>
+      <input class="form-control w-75 mx-auto mt-3 mb-1" id="siteName" type="text" placeholder="Bookmark Name">
+      <div id="nameAlert" class="alert alert-danger w-75 mx-auto" role="alert">
+        <strong>please start with capital letter</strong>
+      </div>
+
+      <label class="fw-bolder" for="siteUrl">Site URL</label>
+      <input class="form-control w-75 mx-auto my-3" id="siteUrl" type="text" placeholder="Website URL">
+      <div id="nameAlert2" class="alert alert-danger w-75 mx-auto" role="alert">
+        <strong>Ex https://www.google.com</strong>
+      </div>
+
+      <button onclick="addBookmark()" class="btn btn-outline-danger">Submit</button>
+    </div>
+
+    <div class=" w-50 mx-auto text-center">
+      <input id="searchInput" onkeyup="searchBookmark()" class="form-control my-4 w-50 mx-auto" placeholder="Search ..." type="text">
+
+      <table class="table table-borderless table-striped">
+        <tbody id="tableRow">
+
+        </tbody>
+      </table>
+    </div>
+
+    <hr>
+    <p class="text-muted fw-bold">© 2022 Bookmarker Inc.</p>
+  </div>
+
+
+
+  <!-- External -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
